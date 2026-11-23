@@ -12,7 +12,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
-import org.bukkit.event.player.PlayerToggleGlideEvent;
+import org.bukkit.event.entity.EntityToggleGlideEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -170,7 +170,7 @@ public final class AnarchyPlus extends JavaPlugin implements Listener {
     }
 
     @EventHandler
-    public void onGlide(PlayerToggleGlideEvent event) {
+    public void onGlide(EntityToggleGlideEvent event) {
         if (event.isGliding() && !getConfig().getBoolean("elytra-enabled", true)) {
             event.setCancelled(true);
         }
