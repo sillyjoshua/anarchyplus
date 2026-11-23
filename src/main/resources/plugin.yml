@@ -1,0 +1,15 @@
+name: AnarchyPlus
+version: 1.0.0
+main: site.joshuaking.anarchyplus.AnarchyPlus
+api-version: '26.3'
+description: Anarchy server controls and operator menu.
+authors: [Josh]
+commands:
+  anarchy:
+    description: Opens the Anarchy+ operator menu.
+    usage: /anarchy
+    permission: anarchyplus.admin
+permissions:
+  anarchyplus.admin:
+    description: Access to the Anarchy+ admin menu and controls.
+    default: op
