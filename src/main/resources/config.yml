@@ -1,0 +1,11 @@
+# Anarchy+ settings
+# No anti-cheat or hack-blocking system is included.
+pvp-enabled: true
+elytra-enabled: true
+end-crystals-enabled: true
+
+messages:
+  restart: "&c[Anarchy+] Server restarting in 10 seconds."
+  stop: "&c[Anarchy+] Server is shutting down in 10 seconds."
+  no-permission: "&cYou do not have permission to use Anarchy+."
+  restart-command: "restart"
